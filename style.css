@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #A76D60;
+    background-color: #daa69b;
     text-align: center;
 }
 
@@ -39,8 +39,8 @@ body{
 #reset-btn{
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #191913;
-    color: #fff;
+    background-color: #6e3650;
+    color: #f7f7f7;
     border-radius: 1rem;
     border: none;
 }

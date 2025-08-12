@@ -14,7 +14,7 @@ const winPatterns = [
     [6,7,8]
 ];
 
-boxes.forEach((box) =>{
+boxes.forEach((box) => {
     box.addEventListener("click", () => {
         if(turnO) { 
             //playerO
@@ -23,7 +23,7 @@ boxes.forEach((box) =>{
         } else{
             //playerX
             box.innerText="X";
-            turnO = false;
+            turnO = true;
         }
         box.disabled = true;
     })
