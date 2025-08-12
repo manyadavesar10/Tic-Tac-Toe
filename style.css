@@ -72,3 +72,26 @@ body{
 .hide{
     display: none;
 }
+
+@media (max-width: 600px) {
+    .game {
+        width: 90vmin;
+        height: 90vmin;
+        gap: 2vmin;
+    }
+
+    .box {
+        width: 28vmin;
+        height: 28vmin;
+        font-size: 12vmin;
+    }
+
+    h1 {
+        font-size: 6vmin;
+    }
+
+    #reset-btn, #new-btn {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}
