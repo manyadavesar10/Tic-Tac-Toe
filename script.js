@@ -61,13 +61,13 @@ const enableBoxes = () => {
 const showWinner = (winner) => {
     msg.innerText = `Congratulations, Winner is ${winner}`;
     msgContainer.classList.remove("hide");
-    document.querySelector("main").style.marginTop = "200vh";
     disableBoxes();
     confetti({
         particleCount: 150,
         spread: 70,
         origin: { y: 0.6 }
     });
+    document.querySelector("main").style.marginTop = "200vh";
 };
 
 const checkWinner = () => {
