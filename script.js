@@ -23,6 +23,7 @@ const resetGame = () => {
     turnO= true;
     enableBoxes();
     msgContainer.classList.add("hide");
+     document.querySelector("main").style.marginTop = "0";
     moveCount = 0;
 
 }
@@ -60,6 +61,7 @@ const enableBoxes = () => {
 const showWinner = (winner) => {
     msg.innerText = `Congratulations, Winner is ${winner}`;
     msgContainer.classList.remove("hide");
+    document.querySelector("main").style.marginTop = "200vh";
     disableBoxes();
     confetti({
         particleCount: 150,
@@ -83,6 +85,7 @@ const checkWinner = () => {
     if (moveCount === 9) {
         msg.innerText = "It's a Draw!";
         msgContainer.classList.remove("hide");
+        document.querySelector("main").style.marginTop = "200vh";
         disableBoxes();
     }
 

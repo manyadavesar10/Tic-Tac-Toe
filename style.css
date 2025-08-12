@@ -76,7 +76,7 @@ h1 {
     align-items: center;
     flex-direction: column;
     gap: 4rem;
-
+    animation: fadeIn 0.4s ease;
 }
 
 .hide{
@@ -115,9 +115,6 @@ h1 {
     background-color: #e8d8c8;
 }
 
-.msg-container {
-    animation: fadeIn 0.4s ease;
-}
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px); }
