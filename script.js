@@ -61,6 +61,11 @@ const showWinner = (winner) => {
     msg.innerText = `Congratulations, Winner is ${winner}`;
     msgContainer.classList.remove("hide");
     disableBoxes();
+    confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 }
+    });
 };
 
 const checkWinner = () => {
