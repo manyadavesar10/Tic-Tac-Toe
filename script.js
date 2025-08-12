@@ -3,6 +3,8 @@ let resetBtn = document.querySelector("#reset-btn");
 let newBtn = document.querySelector("#new-btn");
 let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
+let moveCount = 0;
+
 
 let turnO = true;
 
@@ -21,6 +23,7 @@ const resetGame = () => {
     turnO= true;
     enableBoxes();
     msgContainer.classList.add("hide");
+    moveCount = 0;
 
 }
 
@@ -36,7 +39,7 @@ boxes.forEach((box) => {
             turnO = true;
         }
         box.disabled = true;
-
+        moveCount++;
         checkWinner();
     });
 });
@@ -72,6 +75,12 @@ const checkWinner = () => {
             }
         }
     }
+    if (moveCount === 9) {
+        msg.innerText = "It's a Draw!";
+        msgContainer.classList.remove("hide");
+        disableBoxes();
+    }
+
 };
 
 newBtn.addEventListener("click", resetGame);
